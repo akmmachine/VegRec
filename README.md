@@ -1,4 +1,4 @@
-🥗 VegRec — Vegetarian Recipe Recommender
+﻿🥗 VegRec — Vegetarian Recipe Recommender
 VegRec is an intelligent web-based application that helps users discover delicious vegetarian recipes based on the ingredients they already have at home. By leveraging Natural Language Processing (NLP), inverted indexing, and clustering techniques, the system matches user-provided ingredients to the most suitable recipes from a curated vegetarian dataset.
 
 📌 Project Highlights
@@ -15,73 +15,43 @@ Interactive and intuitive UI where users can input ingredients and browse sugges
 
 🧾 Dataset Overview
 The system uses a structured dataset of pure vegetarian recipes with the following key columns:
-Recipe Name
+• Recipe Name
+• Ingredients
 
-
-Ingredients
-
-
-Complete Recipe Process
+• Complete Recipe Process
 
 
 
 🛠️ Technologies Used
-Purpose
-Libraries / Tools
-Data Manipulation
-Pandas, NumPy
-NLP
-NLTK (PorterStemmer), Regex, CountVectorizer
-ML & Similarity
-Scikit-learn (Clustering), SciPy (Cosine)
-Web Framework
-Streamlit
-Data
-Custom vegetarian recipe dataset (CSV)
-
-
+PurposeLibraries / ToolsData ManipulationPandas, NumPyNLPNLTK (PorterStemmer), Regex, CountVectorizerML & SimilarityScikit-learn (Clustering), SciPy (Cosine)Web FrameworkStreamlitDataCustom vegetarian recipe dataset (CSV)
 🔧 Workflow Summary
 1. Data Preprocessing
-Remove punctuation, tokenize and stem ingredients
-
-
-Normalize ingredient formats
-
+• Remove punctuation, tokenize and stem ingredients
+• Normalize ingredient formats
 
 2. Feature Extraction
-Use CountVectorizer to vectorize preprocessed ingredient text
-
-
-Build inverted index for fast ingredient-to-recipe lookup
-
+• Use CountVectorizer to vectorize preprocessed ingredient text
+• Build inverted index for fast ingredient-to-recipe lookup
 
 3. Recipe Recommendation
-Exact/Partial Match: Based on overlap of stemmed ingredients
-
-
-Fallback Matching: Cosine similarity using vectorized ingredients and clustering
-
+• Exact/Partial Match: Based on overlap of stemmed ingredients
+• Fallback Matching: Cosine similarity using vectorized ingredients and clustering
 
 4. Clustering
-Recipes are grouped using AgglomerativeClustering to improve fallback recommendations
-
-
+• Recipes are grouped using AgglomerativeClustering to improve fallback recommendations
 
 🚀 Getting Started
 1. Clone the repository:
-bash
-CopyEdit
+Bash--
 git clone https://github.com/your-username/VegRec.git
 cd VegRec
 
 2. Install dependencies:
-bash
-CopyEdit
+Bash--
 pip install -r requirements.txt
 
 3. Run the app:
-bash
-CopyEdit
+Bash--
 streamlit run app.py
 
 
@@ -90,20 +60,12 @@ Input: tomato, onion, potato
  Output: Recipes like Aloo Tamatar Ki Sabzi, Tomato Curry, etc., with matching scores or similarity distances.
 
 🌱 Future Enhancements
-Integrate transformer-based NLP models (e.g., BERT, DistilBERT)
+• Integrate transformer-based NLP models (e.g., BERT, DistilBERT)
+• Add support for image-based ingredient recognition
+• Personalize recommendations using user preferences
+• Include nutrition facts and cooking time
 
-
-Add support for image-based ingredient recognition
-
-
-Personalize recommendations using user preferences
-
-
-Include nutrition facts and cooking time
-
-
-Enable user-added custom recipes
-
+• Enable user-added custom recipes
 
 
 🤝 Contributions
